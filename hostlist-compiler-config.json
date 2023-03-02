@@ -1,0 +1,529 @@
+{
+    "name": "filippobuletto/adguard-filter-list",
+    "description": "DNS block list that can be used for AdGuardHome. (Does not work with Pi-hole)",
+    "homepage": "https://github.com/filippobuletto/adguard-filter-list",
+    "license": "MIT",
+    "sources": [
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+            "name": "AdGuard DNS filter",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
+            "name": "OISD Blocklist Full",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list",
+            "name": "mmotti regex",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
+            "name": "1Hosts (Lite)",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
+            "name": "Steven Black's List",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
+            "name": "ITA: Filtri-DNS",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt",
+            "name": "AdAway Default Blocklist",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt",
+            "name": "Dan Pollock's List",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_34.txt",
+            "name": "HaGeZi Personal Black & White",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_32.txt",
+            "name": "The NoTracking blocklist",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
+            "name": "Dandelion Sprout's Game Console Adblock List",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
+            "name": "Phishing URL Blocklist (PhishTank and OpenPhish)",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_23.txt",
+            "name": "WindowsSpyBlocker - Hosts spy rules",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
+            "name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
+            "name": "Peter Lowe's Blocklist",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt",
+            "name": "Dandelion Sprout's Anti-Malware List",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
+            "name": "Malicious URL Blocklist (URLHaus)",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
+            "name": "NoCoin Filter List",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt",
+            "name": "The Big List of Hacked Malware Web Sites",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_10.txt",
+            "name": "Scam Blocklist by DurableNapkin",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_31.txt",
+            "name": "Stalkerware Indicators List",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-agh.txt",
+            "name": "Phishing URL blocklist",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/abuse-ags.txt",
+            "name": "blocklistproject abuse",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/crypto-ags.txt",
+            "name": "blocklistproject crypto",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/malware-ags.txt",
+            "name": "blocklistproject malware",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/phishing-ags.txt",
+            "name": "blocklistproject phishing",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/ransomware-ags.txt",
+            "name": "blocklistproject ransomware",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/scam-ags.txt",
+            "name": "blocklistproject scam",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/redirect-ags.txt",
+            "name": "blocklistproject redirect",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/tracking-ags.txt",
+            "name": "blocklistproject tracking",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/smart-tv-ags.txt",
+            "name": "blocklistproject smart-tv",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/ads-ags.txt",
+            "name": "blocklistproject ads",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://blocklistproject.github.io/Lists/adguard/fraud-ags.txt",
+            "name": "blocklistproject fraud",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://hosts.ubuntu101.co.za/domains.list",
+            "name": "Ultimate-Hosts-Blacklist",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://dl.nrd-list.com/1/nrd-list-32-days.txt",
+            "name": "Newly Registered Domains",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://dl.threat-list.com/1/domains.txt",
+            "name": "Emerging and ongoing threats",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://raw.githubusercontent.com/dibdot/DoH-IP-blocklists/master/doh-domains.txt",
+            "name": "DoH-IP-blocklists",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+            "name": "anudeepND adservers",
+            "type": "hosts",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://filippobuletto.github.io/pihole-hoax-sites-list/coronavirus-misinformation-tracking-center.txt",
+            "name": "Coronavirus misinformation",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        },
+        {
+            "source": "https://filippobuletto.github.io/pihole-hoax-sites-list/the-black-list-la-lista-nera-del-web.txt",
+            "name": "Bufale.net: THE BLACK LIST",
+            "type": "adblock",
+            "transformations": [
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines"
+            ]
+        }
+    ],
+    "transformations": ["Deduplicate"]
+}

@@ -1,0 +1,31 @@
+name: "Update list"
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        id: checkout
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+      - name: Compile new version
+        id: version
+        run: |
+              npm i -g @adguard/hostlist-compiler
+              rm -rf blocklist.txt blocklist.txt.gz
+              hostlist-compiler -c hostlist-compiler-config.json -o blocklist.txt
+              wc -l blocklist.txt
+              head blocklist.txt
+              gzip blocklist.txt
+      - name: Push new version to repo
+        uses: stefanzweifel/git-auto-commit-action@v4
+        id: commit
+        with:
+          commit_message: "Update list"
