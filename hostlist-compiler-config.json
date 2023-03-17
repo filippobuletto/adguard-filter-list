@@ -395,19 +395,6 @@
             ]
         },
         {
-            "source": "https://blocklistproject.github.io/Lists/adguard/smart-tv-ags.txt",
-            "name": "blocklistproject smart-tv",
-            "type": "adblock",
-            "transformations": [
-                "RemoveComments",
-                "Compress",
-                "Deduplicate",
-                "Validate",
-                "RemoveEmptyLines",
-                "TrimLines"
-            ]
-        },
-        {
             "source": "https://blocklistproject.github.io/Lists/adguard/ads-ags.txt",
             "name": "blocklistproject ads",
             "type": "adblock",
